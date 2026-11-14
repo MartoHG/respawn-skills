@@ -1,0 +1,16 @@
+[
+    { "query": "haceme una skill respawn-pc para el servicio técnico y el pack de optimización de Windows", "should_trigger": true },
+    { "query": "agregale a respawn-web una regla sobre el tamaño máximo de las imágenes", "should_trigger": true },
+    { "query": "auditá las skills de la casa y decime cuáles no cumplen", "should_trigger": true },
+    { "query": "la description de respawn-design se activa cuando no debe, revisala", "should_trigger": true },
+    { "query": "decidimos que los sitios sin backend no llevan analítica con cookies, dejalo registrado como decisión de la casa", "should_trigger": true },
+    { "query": "sumá 'onboarding' al diccionario de idioma", "should_trigger": true },
+    { "query": "anotá en el changelog lo que cambiamos hoy en las skills y decime qué versión corresponde", "should_trigger": true },
+    { "query": "registrá como deuda técnica que el formulario de contacto de este proyecto no tiene límite de envíos", "should_trigger": false },
+    { "query": "anotá en las decisiones del proyecto por qué usamos tipografía monoespaciada", "should_trigger": false },
+    { "query": "este proyecto va a usar Livewire, registralo como ADR del proyecto", "should_trigger": false },
+    { "query": "revisá si la home cumple con el catálogo de slop", "should_trigger": false },
+    { "query": "inicializá este repositorio como proyecto Respawn", "should_trigger": false },
+    { "query": "auditá este sitio antes de entregarlo", "should_trigger": false },
+    { "query": "armá el Service y el Form Request para el alta de productos", "should_trigger": false }
+]

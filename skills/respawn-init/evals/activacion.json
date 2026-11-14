@@ -1,0 +1,16 @@
+[
+    { "query": "/respawn-init", "should_trigger": true },
+    { "query": "inicializá este repositorio como proyecto Respawn", "should_trigger": true },
+    { "query": "arrancá un proyecto Respawn en esta carpeta, es la web de una ferretería", "should_trigger": true },
+    { "query": "este proyecto quedó con una versión vieja de las skills de la casa, traé la nueva", "should_trigger": true },
+    { "query": "convertí este repositorio viejo de la tienda en proyecto Respawn", "should_trigger": true },
+    { "query": "meté las skills de Respawn en este proyecto", "should_trigger": true },
+    { "query": "instalé la casa en la notebook con Linux y no me aparece el comando de inicializar", "should_trigger": true },
+    { "query": "haceme las preguntas para relevar a un cliente nuevo", "should_trigger": false },
+    { "query": "completá el brief con lo que me contó el cliente", "should_trigger": false },
+    { "query": "registrá el stack del proyecto", "should_trigger": false },
+    { "query": "¿dónde habíamos quedado?", "should_trigger": false },
+    { "query": "creá el proyecto Astro con las cuatro páginas", "should_trigger": false },
+    { "query": "haceme una skill nueva para el servicio técnico", "should_trigger": false },
+    { "query": "instalá las dependencias y levantá el sitio en local", "should_trigger": false }
+]

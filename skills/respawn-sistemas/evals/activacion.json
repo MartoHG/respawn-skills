@@ -1,0 +1,22 @@
+[
+    { "query": "armá el módulo de productos con su Controller, Service y Form Requests", "should_trigger": true },
+    { "query": "el cliente carga como cuarenta productos seguidos, ¿lo hacemos con un diálogo?", "should_trigger": true },
+    { "query": "configurá el webhook de Mercado Pago, no quiero pagos duplicados", "should_trigger": true },
+    { "query": "al eliminar una categoría el listado pierde los filtros", "should_trigger": true },
+    { "query": "hacé el backup automático de la base y probá restaurarlo", "should_trigger": true },
+    { "query": "el dueño tiene que poder cambiar los horarios y las fotos sin llamarme", "should_trigger": true },
+    { "query": "agregá el rol de vendedor, que solo vea sus pedidos", "should_trigger": true },
+    { "query": "escribí el manual de uso del panel", "should_trigger": true },
+    { "query": "armá los pasos del deploy y el .env.example", "should_trigger": true },
+    { "query": "escribí los tests de Pest del alta de turnos", "should_trigger": true },
+    { "query": "qué colores y qué tipografía lleva el panel", "should_trigger": false },
+    { "query": "escribí el texto del botón de guardar y del aviso de éxito", "should_trigger": false },
+    { "query": "agregá el schema de negocio local a la portada de la tienda", "should_trigger": false },
+    { "query": "la ficha de producto tarda en cargar las fotos en el celular", "should_trigger": false },
+    { "query": "el link de WhatsApp de la ficha no lleva el nombre del producto", "should_trigger": false },
+    { "query": "auditá la tienda antes de entregarla, ¿tiene el botón de arrepentimiento?", "should_trigger": false },
+    { "query": "dejá anotado como deuda que el webhook no tiene límite de tasa", "should_trigger": false },
+    { "query": "el cliente pidió una landing y ahora quiere un sistema de turnos, ¿entra?", "should_trigger": false },
+    { "query": "armá el sitio en Astro con cuatro páginas", "should_trigger": false },
+    { "query": "inicializá este proyecto como Respawn", "should_trigger": false }
+]

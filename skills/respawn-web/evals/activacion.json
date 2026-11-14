@@ -1,0 +1,20 @@
+[
+    { "query": "el texto gris del pie no pasa el contraste AA", "should_trigger": true },
+    { "query": "las fotos de la galería pesan un montón, bajalas", "should_trigger": true },
+    { "query": "agregá el schema de negocio local y el sitemap", "should_trigger": true },
+    { "query": "armá el layout base con el head completo", "should_trigger": true },
+    { "query": "la vista previa apareció en Google, ¿qué pasó?", "should_trigger": true },
+    { "query": "el link de WhatsApp no abre con el texto prellenado", "should_trigger": true },
+    { "query": "el menú no se puede usar con el teclado", "should_trigger": true },
+    { "query": "mañana conectamos el dominio, ¿qué hay que cambiar?", "should_trigger": true },
+    { "query": "el cliente quiere un formulario de contacto en la portada", "should_trigger": true },
+    { "query": "proponeme conceptos para la web de la peluquería", "should_trigger": false },
+    { "query": "escribí el título y la bajada de la portada", "should_trigger": false },
+    { "query": "qué dice el mensaje de WhatsApp del botón de turnos", "should_trigger": false },
+    { "query": "armá el Service y la migración de productos", "should_trigger": false },
+    { "query": "configurá el webhook de Mercado Pago", "should_trigger": false },
+    { "query": "medí el Lighthouse y decime si pasa la entrega", "should_trigger": false },
+    { "query": "dejá anotado como deuda que faltan los alt de la galería", "should_trigger": false },
+    { "query": "el panel de productos tiene que dejar editar las fotos", "should_trigger": false },
+    { "query": "hacé el backup de la base y probá restaurarlo", "should_trigger": false }
+]

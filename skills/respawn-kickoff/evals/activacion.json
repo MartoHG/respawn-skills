@@ -1,0 +1,20 @@
+[
+    { "query": "tengo un cliente nuevo, una peluquería que quiere una web", "should_trigger": true },
+    { "query": "relevá el negocio de la ferretería antes de arrancar", "should_trigger": true },
+    { "query": "¿qué paquete le corresponde a alguien que quiere mostrar sus trabajos y cambiar las fotos él?", "should_trigger": true },
+    { "query": "el cliente ahora quiere que la gente pueda sacar turno desde la web", "should_trigger": true },
+    { "query": "me pidió además un formulario que le llegue por correo, ¿eso entra?", "should_trigger": true },
+    { "query": "¿cuántas horas lleva un sistema de stock con dos sucursales?", "should_trigger": true },
+    { "query": "armame la lista de lo que le tengo que preguntar al cliente", "should_trigger": true },
+    { "query": "pasame por escrito qué incluye y qué no para mandárselo", "should_trigger": true },
+    { "query": "¿esto lo hago en Astro o en Laravel?", "should_trigger": true },
+    { "query": "inicializá este repositorio como proyecto Respawn", "should_trigger": false },
+    { "query": "proponeme conceptos para la web de la peluquería", "should_trigger": false },
+    { "query": "anotá que el cliente todavía no mandó las fotos", "should_trigger": false },
+    { "query": "¿dónde habíamos quedado con este proyecto?", "should_trigger": false },
+    { "query": "armá el módulo de turnos con su Service y sus tests", "should_trigger": false },
+    { "query": "auditá el sitio antes de entregarlo", "should_trigger": false },
+    { "query": "escribí el texto del botón de contacto", "should_trigger": false },
+    { "query": "registrá como decisión por qué usamos esa paleta", "should_trigger": false },
+    { "query": "hacé el manual de uso del panel", "should_trigger": false }
+]

@@ -1,0 +1,20 @@
+[
+    { "query": "proponeme conceptos para la web de una peluquería de barrio", "should_trigger": true },
+    { "query": "armá la portada de la ferretería", "should_trigger": true },
+    { "query": "¿esto parece hecho con IA? mirá la sección de servicios", "should_trigger": true },
+    { "query": "qué tipografía y qué colores le ponemos a la tienda de muebles", "should_trigger": true },
+    { "query": "escribí el título y el botón principal de la home", "should_trigger": true },
+    { "query": "pasale el catálogo a la página de contacto antes de cerrarla", "should_trigger": true },
+    { "query": "el cliente quiere un carrusel de testimonios, ¿va o no va?", "should_trigger": true },
+    { "query": "el panel de productos quedó con los componentes tal cual vienen, mejoralo", "should_trigger": true },
+    { "query": "le quiero agregar una animación al menú del celular", "should_trigger": true },
+    { "query": "el texto gris del pie no pasa el contraste AA", "should_trigger": false },
+    { "query": "bajá el peso de las imágenes de la galería", "should_trigger": false },
+    { "query": "agregá el schema de negocio local y el sitemap", "should_trigger": false },
+    { "query": "anotá en las decisiones por qué usamos esa tipografía", "should_trigger": false },
+    { "query": "armá el Service y el Form Request del alta de productos", "should_trigger": false },
+    { "query": "auditá el sitio antes de entregarlo", "should_trigger": false },
+    { "query": "haceme las preguntas para relevar a un cliente nuevo", "should_trigger": false },
+    { "query": "el link de WhatsApp no abre con el texto prellenado", "should_trigger": false },
+    { "query": "agregale al catálogo de slop un patrón nuevo", "should_trigger": false }
+]

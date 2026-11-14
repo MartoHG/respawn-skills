@@ -1,0 +1,18 @@
+[
+    { "query": "anotá que vamos con la tipografía del cartel del local y por qué", "should_trigger": true },
+    { "query": "el formulario de contacto quedó sin límite de envíos, no lo arreglo hoy, dejalo anotado", "should_trigger": true },
+    { "query": "el cliente quiere el carrusel de fotos igual aunque baje el rendimiento, lo aceptamos así", "should_trigger": true },
+    { "query": "todavía no me mandaron los horarios ni las fotos del local", "should_trigger": true },
+    { "query": "¿dónde habíamos quedado con este proyecto?", "should_trigger": true },
+    { "query": "terminamos por hoy, dejá registrado qué sigue", "should_trigger": true },
+    { "query": "el dominio quedó a nombre del cliente y el hosting a mi nombre, registralo", "should_trigger": true },
+    { "query": "me llevó una hora darme cuenta de que la vista previa no tomaba la variable de entorno, que no vuelva a pasar", "should_trigger": true },
+    { "query": "inicializá este repositorio como proyecto Respawn", "should_trigger": false },
+    { "query": "proponeme dos o tres conceptos para la web de la peluquería", "should_trigger": false },
+    { "query": "haceme las preguntas para relevar a un cliente nuevo que quiere una tienda", "should_trigger": false },
+    { "query": "auditá el sitio antes de entregarlo", "should_trigger": false },
+    { "query": "agregale una regla a respawn-web sobre el tamaño de las imágenes", "should_trigger": false },
+    { "query": "escribí el texto del botón de contacto de la portada", "should_trigger": false },
+    { "query": "¿qué umbral de Lighthouse tiene que pasar este sitio?", "should_trigger": false },
+    { "query": "armá la migración y el modelo de turnos", "should_trigger": false }
+]
