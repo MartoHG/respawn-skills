@@ -84,6 +84,7 @@ Solo en estos casos:
 - `script` — archivo ejecutable de `scripts/`.
 - `request` — petición HTTP.
 - `placeholder` — texto de ejemplo dentro de un campo de formulario.
+- `DOM` — la página tal como la arma el navegador, la que se mide.
 
 ## 4. Prefijos
 

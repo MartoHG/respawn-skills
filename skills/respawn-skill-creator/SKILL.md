@@ -208,8 +208,9 @@ Se ejecuta una vez, al terminar de crear o modificar una skill o un ADR.
 2. **Correr la prueba de activación** si cambió una `description` o se sumó
    una skill.
 3. **Anotar el cambio** en `CHANGELOG.md` con su número de versión.
-4. **Actualizar la tabla de skills** del `README.md` si se sumó, quitó o
-   renombró una skill.
+4. **Actualizar los archivos de la raíz:** la tabla de skills del
+   `README.md` si se sumó, quitó o renombró una skill, y `DECISIONES.md` si
+   cambió un ADR o una decisión que figura ahí.
 5. **Informar al usuario** qué cambió y qué proyectos conviene actualizar.
 
 | Cambio                                                              | Versión |

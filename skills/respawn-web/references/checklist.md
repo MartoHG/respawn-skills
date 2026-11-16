@@ -27,8 +27,8 @@
 4. **Informar** cada regla que no cumple con la página, el elemento y, si es
    código, el archivo y la línea.
 
-**Bloqueantes: A1, A2, B1, B2, B3, B6, B10, D1, D3, D7, E1, E2, E4, E7, F1 y
-F2.** El resto se informa como recomendación.
+**Bloqueantes: A1, A2, B1, B2, B3, B6, B10, C11, D1, D3, D7, E1, E2, E4, E7,
+F1 y F2.** El resto se informa como recomendación.
 
 ## A. HTML
 

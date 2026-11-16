@@ -100,7 +100,7 @@ de todo lo que se haga.
 
 ## 3. Estado actual
 
-Siete skills escritas, trece ADRs y los archivos del repositorio.
+Ocho skills escritas, quince ADRs y los archivos del repositorio.
 
 | Skill                   | Líneas | Qué tiene                                                                                         |
 | ----------------------- | ------ | ------------------------------------------------------------------------------------------------- |
@@ -111,11 +111,11 @@ Siete skills escritas, trece ADRs y los archivos del repositorio.
 | `respawn-web`           | 271    | Lista A a F con 72 reglas, notas para Astro y para Laravel con Blade                              |
 | `respawn-sistemas`      | 348    | Lista A a L con 125 reglas, patrones, panel del cliente, Mercado Pago, operación y `puente-htmx.js` |
 | `respawn-kickoff`       | 330    | Árbol de relevamiento, estimación por módulos, lista A a D y dos plantillas para el cliente       |
-| `review-respawn`        | -      | **Falta escribirla**                                                                              |
+| `review-respawn`        | 273    | Áreas y listas que recorre, mirar y medir, sitios que cobran, resultado y sello, dos plantillas de informe |
 
 Archivos de la raíz: `CHANGELOG.md` (todo bajo «Sin publicar»),
 `install.ps1`, `install.sh`, `.gitattributes` (LF salvo `.ps1`) y
-`.gitignore`. Todavía no existen `README.md` ni `DECISIONES.md`.
+`.gitignore`, `README.md` y `DECISIONES.md`.
 
 **Estructura de cada skill:** `SKILL.md` con frontmatter, índice numerado,
 secciones numeradas desde 0, antipatrones, fuentes y referencias;
@@ -125,16 +125,34 @@ declarados; `evals/activacion.json` con la mitad de consultas negativas.
 **Cada lista de verificación declara sus bloqueantes.** `review-respawn` las
 consume: no reescribe reglas, las recorre.
 
-**Los enlaces rotos que quedan** apuntan a `review-respawn`, que no existe
-todavía.
+**No quedan enlaces rotos:** los que apuntaban a `review-respawn` ya
+resuelven.
 
 ---
 
 ## 4. Lo que falta, en orden
 
-### 4.1 Escribir `review-respawn`
+### 4.1 `review-respawn`: escrita
 
-Es la auditoría de entrega y el sello (ADR-002). Lo pedido:
+Escrita en la sesión del 2026-11-14, en la otra computadora. Lo que se
+decidió con Marto, además de lo pedido más abajo:
+
+- **Informe** en `.ai/auditoria.md` y, solo con sello,
+  `.ai/auditoria-cliente.md`. Se reescriben en cada auditoría. Se sumaron al
+  mapa de `respawn-proyecto`, a la plantilla del `CLAUDE.md` y a `entrega.md`.
+- **Qué impide el sello (ADR-014):** un bloqueante sin comprobar deja la
+  auditoría incompleta; la deuda alta abierta impide el sello; un riesgo
+  aceptado cubre cualquier bloqueante **salvo los legales**; el dominio a
+  nombre del desarrollador no bloquea, se informa.
+- **Lo legal solo en sitios que cobran (ADR-015):** cualquiera sea el
+  paquete (también un sistema que cobra una seña). Incluye el logo de Data
+  Fiscal de ARCA.
+- **Lighthouse:** lo corre el agente si hay Chrome; si no, Marto pasa
+  PageSpeed Insights. Esta máquina no tiene Chrome.
+- **De paso:** la consola limpia de `respawn-web` pasó a bloqueante, para
+  coincidir con el ADR-005. `DOM` se sumó al diccionario.
+
+Lo pedido originalmente:
 
 - **Entrada:** URL o repositorio, más el paquete contratado. **Salida:** un
   informe `.md` con cada check en ✅, ⚠️ o ❌, con evidencia y cómo arreglarlo,
@@ -166,11 +184,16 @@ Es la auditoría de entrega y el sello (ADR-002). Lo pedido:
 - **Solo lectura** hasta que Marto aprueba el plan de correcciones.
 - Lo pospuesto en una auditoría se registra como deuda con `respawn-proyecto`.
 
-#### 4.1.1 Lo legal: lo que se encontró y lo que falta verificar
+#### 4.1.1 Lo legal: verificado en las fuentes oficiales
 
-Se investigó por fuentes secundarias. **Hay que leer el texto en el Boletín
-Oficial antes de escribir la skill** y aclarar en ella que no reemplaza
-asesoramiento legal.
+El 2026-11-14 se leyó el texto de las dos disposiciones en el Boletín Oficial
+y la Ley 24.240 en InfoLEG. **Dos correcciones** a lo que sigue: el link de
+baja se llama «BOTÓN DE BAJA DE SERVICIO», en singular (el plural es el
+título del artículo 4); y las 72 horas de la constancia de baja no son de la
+Disposición 954/2025, sino del art. 10 ter de la Ley 24.240. Se sumó el aviso
+del plazo en los documentos de venta (art. 34). El art. 1116 del Código Civil
+y Comercial se leyó en una fuente secundaria. Lo que sigue es lo investigado
+en la primera sesión.
 
 - **Disposición 954/2025** (Subsecretaría de Defensa del Consumidor,
   septiembre de 2025): deroga las resoluciones 316/2018 y 424/2020.
@@ -201,15 +224,19 @@ asesoramiento legal.
   [Disposición 3/2026 (PDF)](https://www.cabase.org.ar/wp-content/uploads/2026/02/Disposicion-03-26.pdf),
   [Infobae](https://www.infobae.com/economia/2025/09/04/implementaron-cambios-el-regimen-de-cancelacion-de-compras-online/).
 
-### 4.2 `README.md` y `DECISIONES.md`
+### 4.2 `README.md` y `DECISIONES.md`: escritos
 
-- `README.md`: qué es, cómo se instala, cómo se usa, tabla de skills (la
-  regla de `respawn-skill-creator` exige que coincida con `skills/`).
-- `DECISIONES.md`: resumen de todo lo decidido, con enlace a cada ADR.
+- `README.md`: qué es, cómo funciona, instalar, usar en un proyecto, tabla de
+  las ocho skills, modificar la casa y estructura.
+- `DECISIONES.md`: una línea por decisión, agrupadas por tema, con enlace a
+  los quince ADRs y a la skill dueña de las decisiones que no tienen ADR.
+- Para que no se desactualice, el cierre de `respawn-skill-creator` ahora
+  incluye `DECISIONES.md` y su lista tiene la regla C7.
+- **Falta decidir:** la licencia del repositorio antes de hacerlo público.
 
 ### 4.3 Auditoría con la lista de `respawn-skill-creator` (fase 4)
 
-- Recorrer la lista completa sobre las ocho skills y los trece ADRs.
+- Recorrer la lista completa sobre las ocho skills y los quince ADRs.
 - **Correr la prueba de activación**, que no se corrió nunca: juntar las ocho
   `description`, asignar cada consulta de cada `evals/activacion.json` a una
   skill con una sesión nueva o un subagente que no haya participado, y
@@ -217,6 +244,39 @@ asesoramiento legal.
   `respawn-design` y `respawn-init` comparten vocabulario.
 - Resolver los enlaces rotos y fijar la versión `0.1.0` en `CHANGELOG.md`
   (`respawn-init` anota esa versión en cada proyecto).
+
+#### 4.3.1 Avance (2026-11-16)
+
+**Hecho: la pasada mecánica** sobre las ocho skills y los quince ADRs, con
+un script descartable que no se guardó (ADR-010). No hay enlaces rotos ni
+problemas de fin de línea, largo, índice, frontmatter ni nombres de ADR.
+Hallazgos, solo informados, sin corregir (la auditoría es de solo lectura
+hasta que Marto aprueba):
+
+| Regla | Dónde | Hallazgo | Decisión propuesta |
+| --- | --- | --- | --- |
+| A4 (bloqueante) | `respawn-sistemas/SKILL.md` | La `description` no tiene pedidos literales entre comillas | Corregir |
+| Plantilla de ADR | ADR-001 y ADR-008 | «Referenciado en» vacío; los citan `respawn-init`, `respawn-proyecto` (solo el 001) y `respawn-skill-creator` | Corregir |
+| Plantilla de ADR | ADR-004 | Falta `respawn-kickoff`, que lo cita | Corregir |
+| Plantilla de ADR | ADR-007 | Nombra `respawn-proyecto`, que no lo cita | Corregir |
+| Plantilla de ADR | ADR-009 | Nombra `respawn-kickoff`, que no lo cita; falta `respawn-proyecto` | Corregir |
+| Plantilla de ADR | ADR-011 | Falta `respawn-proyecto`, que lo cita | Corregir |
+
+Descartados: «usted» en `respawn-design/references/textos.md` (enuncia la
+regla de voz), `user` y `HX-Trigger` en `respawn-sistemas/references/patrones.md`
+(código del stack), «H1» en `respawn-skill-creator` (nivel de título), la
+dirección de la web en `respawn-kickoff` (la regla manda a consultarla) y «por
+ahora» en un antipatrón de `respawn-design` (cita la frase que se evita).
+
+**Falta:**
+
+1. Leer las skills contra las reglas de redacción que no se pueden comprobar
+   con un script (B3 a B6, B10, B12, B13 y B15).
+2. Contrastar que cada ADR citado diga lo que afirma la regla.
+3. La prueba de activación: Marto todavía no eligió si la hace un subagente
+   (lo recomendado) o una sesión nueva.
+4. Presentar todos los hallazgos juntos, esperar la aprobación y corregir.
+5. Fijar `0.1.0` en `CHANGELOG.md`.
 
 ### 4.4 Prueba final (fase 5)
 
@@ -242,8 +302,8 @@ asesoramiento legal.
 2. **Simular `respawn-kickoff`** con la peluquería de Olavarría (landing que
    pasa a querer turnos) y comprobar que frena, lo dice y propone las salidas.
 3. **Instalar de verdad:** correr `install.ps1` contra la carpeta global (solo
-   se probó su función de enlace en una carpeta temporal) y `install.sh` en
-   Linux (solo se comprobó la sintaxis).
+   se probó su función de enlace en una carpeta temporal). `install.sh` ya
+   corrió de verdad en Linux el 2026-11-14 y creó los dos enlaces.
 4. **Probar `/respawn-init`** sobre una carpeta real y ver que el agente la
    active.
 
@@ -256,7 +316,7 @@ archivo, revisar la historia de git y el texto de las skills.
 
 ## 5. Decisiones tomadas
 
-Los trece ADRs viven en `skills/respawn-skill-creator/adrs/`.
+Los quince ADRs viven en `skills/respawn-skill-creator/adrs/`.
 
 | ADR | Decisión                                                                                              |
 | --- | ----------------------------------------------------------------------------------------------------- |
@@ -273,6 +333,8 @@ Los trece ADRs viven en `skills/respawn-skill-creator/adrs/`.
 | 011 | Los patrones de slop están prohibidos salvo excepción registrada; los medidores externos no son la vara |
 | 012 | En proyectos Respawn manda `respawn-design` sobre las skills de diseño de terceros                     |
 | 013 | La memoria del proyecto vive en inventarios dentro de su `.ai/`                                        |
+| 014 | Qué impide el sello: lo bloqueante se comprueba; un riesgo aceptado cubre todo salvo lo legal           |
+| 015 | La auditoría revisa lo legal solo en los sitios que cobran, cualquiera sea el paquete                  |
 
 **Umbrales (ADR-005), todos medidos en celular:** Lighthouse rendimiento 90 o
 más en sitios sin backend y 80 o más en páginas públicas con backend;
@@ -385,11 +447,14 @@ conciliación. Sus convenciones de nombres (`{singular}_id`, tablas en plural,
   se corrieron en un proyecto Laravel. Son plantillas con marcadores; la
   primera vez que se usen hay que corregir en la casa lo que no compile.
 - **Notas de Laravel** de `respawn-web`: no se probaron en un proyecto real.
-- **`install.ps1` completo** contra la carpeta global y **`install.sh`** en
-  Linux.
+- **`install.ps1` completo** contra la carpeta global. `install.sh` ya se
+  probó en Linux.
+- **`review-respawn` nunca se corrió** sobre un proyecto, ni su prueba de
+  activación.
 - **El comando `/respawn-init`** a través de Claude Code: el script se probó
   por separado, no la activación de la skill.
-- **Normativa legal:** solo por fuentes secundarias.
+- **Normativa legal:** las disposiciones y la Ley 24.240 se leyeron en la
+  fuente oficial; el art. 1116 del Código Civil y Comercial, no.
 - **Lighthouse y Slop Score** de la web de Respawn.
 - **El puente HTMX** (`respawn-sistemas/assets/puente-htmx.js`) sí se probó
   en el navegador contra un servidor de prueba: carga rápida, errores 422
@@ -437,4 +502,9 @@ conciliación. Sus convenciones de nombres (`{singular}_id`, tablas en plural,
     commitear y subir para seguir desde otra computadora. Este archivo es
     ese traspaso.
 
-**Próximo paso exacto:** escribir `review-respawn`.
+11. **Segunda sesión (2026-11-14, otra computadora):** se clonó el
+    repositorio, se corrió `install.sh`, se verificó la normativa y se
+    escribió `review-respawn` con siete decisiones de Marto (ADR-014 y
+    ADR-015). Después, `README.md` y `DECISIONES.md`.
+
+**Próximo paso exacto:** seguir la auditoría desde la lista «Falta» de 4.3.1.

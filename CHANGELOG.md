@@ -9,7 +9,9 @@ menor y parche está en `skills/respawn-skill-creator/SKILL.md`.
 
 - `respawn-skill-creator`: estándar de las skills de la casa, lista de
   verificación, diccionario de idioma, flujo de ADRs y prueba de activación.
-- ADRs de la casa, del ADR-001 al ADR-013.
+- ADRs de la casa, del ADR-001 al ADR-015.
+- `README.md` con la instalación, el uso y la tabla de skills, y
+  `DECISIONES.md` con el resumen de cada decisión.
 - `respawn-proyecto`: memoria de cada proyecto, con sus inventarios y las
   plantillas de la capa proyecto.
 - `respawn-init`: script que copia las skills a un proyecto, crea su `.ai/`
@@ -23,3 +25,6 @@ menor y parche está en `skills/respawn-skill-creator/SKILL.md`.
   cliente, Mercado Pago, seguridad y operación, con su puente HTMX probado.
 - `respawn-kickoff`: relevamiento de a una pregunta, encuadre en un paquete,
   detección de pedidos fuera de alcance, estimación por módulos y cierre.
+- `review-respawn`: auditoría de entrega que recorre las listas de las demás
+  skills mirando y midiendo cada página, con los controles legales de los
+  sitios que cobran, el informe interno y el informe para el cliente.

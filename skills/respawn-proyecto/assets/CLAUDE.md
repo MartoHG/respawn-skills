@@ -38,6 +38,8 @@ Las skills de `.claude/skills/` son una copia de la casa: no se editan acá.
 | `.ai/riesgos-aceptados.md`   | Desvíos conservados a propósito, si los hay             |
 | `.ai/problemas-conocidos.md` | Trampas del entorno, si las hay                         |
 | `.ai/pendientes-cliente.md`  | Lo que falta que el cliente entregue, si hay algo       |
+| `.ai/auditoria.md`           | Último informe de auditoría, si ya se auditó            |
+| `.ai/auditoria-cliente.md`   | Informe para el cliente, si el proyecto tiene el sello  |
 
 ## Cómo trabajar
 

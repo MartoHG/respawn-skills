@@ -40,5 +40,5 @@ claves ni tokens: solo dónde está cada cosa y a nombre de quién.
 
 ## Auditoría
 
-- **Informe:** {ruta del informe de `review-respawn`}
-- **Resultado:** {sin bloqueantes, o qué quedó}
+- **Informe:** `.ai/auditoria.md`
+- **Resultado:** {con sello, sin sello o incompleta, y la fecha}

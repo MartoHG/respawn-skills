@@ -155,6 +155,8 @@ cambio. El resto se corrige o se justifica en el informe.
 - **C5.** Disco: el resultado se comprobó leyendo los archivos, no por el
   mensaje de la herramienta.
 - **C6.** Sin commit ni subida de cambios sin pedido del usuario.
+- **C7.** Resumen de decisiones: cada ADR del índice figura en
+  `DECISIONES.md` con su enlace, y cada línea dice la decisión vigente.
 
 ## D. ADRs
 

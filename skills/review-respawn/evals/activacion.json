@@ -1,0 +1,18 @@
+[
+    { "query": "auditá el sitio antes de entregarlo", "should_trigger": true },
+    { "query": "¿la web de la ferretería ya está lista para entregar?", "should_trigger": true },
+    { "query": "pasale la revisión final a la tienda de ropa", "should_trigger": true },
+    { "query": "¿la tienda cumple con el botón de arrepentimiento?", "should_trigger": true },
+    { "query": "medí Lighthouse en todas las páginas y decime si pasa", "should_trigger": true },
+    { "query": "¿le podemos dar el sello a este proyecto?", "should_trigger": true },
+    { "query": "revisá la vista previa de punta a punta antes de mostrársela al cliente", "should_trigger": true },
+    { "query": "armá el informe de entrega para mandarle al cliente", "should_trigger": true },
+    { "query": "revisá el slop de la pantalla de servicios", "should_trigger": false },
+    { "query": "el texto gris del pie no pasa el contraste, corregilo", "should_trigger": false },
+    { "query": "agregá el botón de arrepentimiento a la tienda", "should_trigger": false },
+    { "query": "dejá como deuda que las fotos no tienen medidas", "should_trigger": false },
+    { "query": "auditá las skills de la casa", "should_trigger": false },
+    { "query": "actualizá las skills de este proyecto a la última versión", "should_trigger": false },
+    { "query": "¿esto que pidió el cliente entra en el paquete?", "should_trigger": false },
+    { "query": "hacé el manual de uso del panel", "should_trigger": false }
+]

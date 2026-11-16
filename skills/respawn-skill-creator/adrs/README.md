@@ -36,3 +36,5 @@ contexto, alternativas descartadas, decisión y consecuencias.
 | [ADR-011](ADR-011-slop-prohibido-por-defecto.md)            | Los patrones de slop están prohibidos salvo excepción registrada              |
 | [ADR-012](ADR-012-prioridad-sobre-skills-de-terceros.md)    | En proyectos Respawn manda `respawn-design` sobre las skills de diseño de terceros |
 | [ADR-013](ADR-013-memoria-del-proyecto-en-inventarios.md)   | La memoria del proyecto vive en inventarios dentro de su `.ai/`               |
+| [ADR-014](ADR-014-que-impide-el-sello.md)                   | Qué impide el sello                                                           |
+| [ADR-015](ADR-015-legal-solo-en-sitios-que-cobran.md)       | La auditoría revisa lo legal solo en los sitios que cobran                    |

@@ -71,13 +71,17 @@ Reglas verificables de la capa: [references/checklist.md](references/checklist.m
     ├── deuda-tecnica.md       ← DT-NN: desvíos a corregir
     ├── riesgos-aceptados.md   ← RA-NN: desvíos que se conservan a propósito
     ├── problemas-conocidos.md ← trampas del entorno, con causa y solución
-    └── pendientes-cliente.md  ← lo que falta que el cliente entregue
+    ├── pendientes-cliente.md  ← lo que falta que el cliente entregue
+    ├── auditoria.md           ← informe vigente de la auditoría de entrega
+    └── auditoria-cliente.md   ← versión del informe para el cliente, solo con sello
 ```
 
 - Los cuatro primeros archivos de `.ai/` y `adrs/` existen siempre; los crea
   [respawn-init](../respawn-init/SKILL.md).
 - Los cuatro inventarios existen solo mientras tienen ítems: se crean con el
   primer ítem y se borran al quedar vacíos.
+- Los dos informes existen desde la primera auditoría. Los escribe
+  [review-respawn](../review-respawn/SKILL.md) y esta skill no los edita.
 - Toda plantilla vive en `assets/` de esta skill.
 
 ---
@@ -98,6 +102,7 @@ Reglas verificables de la capa: [references/checklist.md](references/checklist.m
 | Un texto, una foto o un acceso que el cliente todavía no entregó   | `pendientes-cliente.md`         |
 | A nombre de quién quedan dominio y hosting, y cómo son los backups | `entrega.md`                    |
 | En qué etapa está el proyecto y qué sigue                          | `estado.md`                     |
+| El resultado de la auditoría de entrega                            | `auditoria.md`                  |
 | Una contraseña, una clave o un token                               | Ningún archivo del repositorio  |
 
 Qué decisión de diseño corresponde tomar la define
